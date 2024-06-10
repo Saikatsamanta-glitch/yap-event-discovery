@@ -1,0 +1,8 @@
+.ad-banner {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ad-banner:has(> ins:empty) {
+  display: none !important;
+}

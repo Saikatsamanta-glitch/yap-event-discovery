@@ -1,0 +1,135 @@
+.blog-detail-page {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 40px;
+
+  &--heading {
+    color: var(--blog-detail-page-title-color);
+  }
+
+  &--main-img {
+    margin: 24px 0px;
+    border-radius: 8px;
+  }
+
+  &--description {
+    color: var(--blog-detail-page-description-color);
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &--container {
+    row-gap: 64px;
+    margin-top: 64px;
+  }
+}
+
+.blog-section {
+  &--title {
+    color: var(--blog-section-title-color);
+  }
+
+  &--link {
+    color: var(--blog-section-link-color);
+  }
+
+  &--description {
+    color: var(--blog-detail-page-description-color);
+    font-weight: 400;
+    line-height: 24px;
+
+    &--link {
+      color: var(--blog-section-title-color);
+      margin-left: 4px;
+    }
+  }
+
+  &--img {
+    border-radius: 8px;
+  }
+}
+
+.similar-blogs {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 48px;
+  margin-bottom: 48px;
+
+  &--container {
+    padding-top: 26px;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(358px, 1fr));
+    justify-items: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-detail-page {
+    padding: 0px 24px;
+
+    &--main-img {
+      width: 100%;
+    }
+
+    .blog-section {
+      &--img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-detail-page {
+    margin-top: 24px;
+    padding: 0px 16px;
+
+    &--heading {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    &--main-img {
+      margin: 16px 0px;
+      height: 164px;
+      width: 100%;
+    }
+
+    &--description {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    &--container {
+      row-gap: 48px;
+      margin-top: 48px;
+    }
+  }
+
+  .blog-section {
+    &--link {
+      font-size: 14px;
+    }
+
+    &--description {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+
+      &--link {
+        margin-left: 4px;
+        font-size: 14px;
+      }
+    }
+
+    &--img {
+      width: 100%;
+      left: 0;
+      margin-left: 0px;
+      height: 164px;
+    }
+  }
+}

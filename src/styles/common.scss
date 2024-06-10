@@ -1,0 +1,52 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--body-bg);
+}
+
+main {
+  flex: 1;
+}
+
+.section {
+  padding: 24px 40px;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+}
+
+.y-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (max-width: 1282px) {
+    margin: 0;
+    max-width: unset;
+    padding: 0 40px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 16px;
+  }
+}
+
+.artist-page__detail {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+
+  @media (max-width: 578px) {
+    flex-direction: column;
+  }
+}

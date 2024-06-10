@@ -1,0 +1,40 @@
+.promotional-banner {
+  height: 40px;
+  background-color: var(--y-primary-normal);
+  text-align: center;
+  padding: 10px;
+  z-index: 1004;
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: rgb(238, 238, 238);
+
+    &__icon {
+      vertical-align: middle;
+      margin-right: 8px;
+      margin-bottom: 2px;
+    }
+
+    &__link {
+      color: inherit;
+      font-size: 14px;
+      line-height: 20px;
+      margin-left: 3px;
+      text-decoration: underline;
+      font-weight: 700;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .promotional-banner {
+    height: 56px;
+    padding: 7px;
+  }
+}

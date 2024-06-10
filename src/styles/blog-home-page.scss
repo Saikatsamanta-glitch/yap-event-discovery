@@ -1,0 +1,42 @@
+.blog-home-page {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+
+  &--title {
+    color: var(--blog-home-page-title-color);
+  }
+
+  &--description {
+    color: var(--blog-home-page-description-color);
+    line-height: 24px;
+  }
+
+  &__bg {
+    padding: 40px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 224px;
+
+    &-light {
+      display: unset;
+    }
+
+    &-dark {
+      display: none;
+    }
+  }
+}
+
+[data-theme='dark'] {
+  .blog-home-page__bg {
+    &-light {
+      display: none;
+    }
+
+    &-dark {
+      display: unset;
+    }
+  }
+}

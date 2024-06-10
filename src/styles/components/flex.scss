@@ -1,0 +1,209 @@
+.y-flex {
+  display: flex;
+
+  &__justify-content {
+    &--flex-start {
+      justify-content: flex-start;
+    }
+
+    &--flex-end {
+      justify-content: flex-end;
+    }
+
+    &--center {
+      justify-content: center;
+    }
+
+    &--space-between {
+      justify-content: space-between;
+    }
+
+    &--space-around {
+      justify-content: space-around;
+    }
+
+    &--space-evenly {
+      justify-content: space-evenly;
+    }
+  }
+
+  &__align-items {
+    &--flex-start {
+      align-items: flex-start;
+    }
+
+    &--flex-end {
+      align-items: flex-end;
+    }
+
+    &--center {
+      align-items: center;
+    }
+
+    &--baseline {
+      align-items: baseline;
+    }
+
+    &--stretch {
+      align-items: stretch;
+    }
+  }
+
+  &__gap {
+    &--2 {
+      gap: 2px;
+    }
+
+    &--4 {
+      gap: 4px;
+    }
+
+    &--6 {
+      gap: 6px;
+    }
+
+    &--8 {
+      gap: 8px;
+    }
+
+    &--12 {
+      gap: 12px;
+    }
+
+    &--16 {
+      gap: 16px;
+    }
+
+    &--20 {
+      gap: 20px;
+    }
+
+    &--24 {
+      gap: 24px;
+    }
+
+    &--32 {
+      gap: 32px;
+    }
+
+    &--40 {
+      gap: 40px;
+    }
+  }
+
+  &__column-gap {
+    &--2 {
+      column-gap: 2px;
+    }
+
+    &--4 {
+      column-gap: 4px;
+    }
+
+    &--6 {
+      column-gap: 6px;
+    }
+
+    &--8 {
+      column-gap: 8px;
+    }
+
+    &--12 {
+      column-gap: 12px;
+    }
+
+    &--16 {
+      column-gap: 16px;
+    }
+
+    &--20 {
+      column-gap: 20px;
+    }
+
+    &--24 {
+      column-gap: 24px;
+    }
+
+    &--32 {
+      column-gap: 32px;
+    }
+
+    &--40 {
+      column-gap: 40px;
+    }
+  }
+
+  &__row-gap {
+    &--2 {
+      row-gap: 2px;
+    }
+
+    &--4 {
+      row-gap: 4px;
+    }
+
+    &--6 {
+      row-gap: 6px;
+    }
+
+    &--8 {
+      row-gap: 8px;
+    }
+
+    &--12 {
+      row-gap: 12px;
+    }
+
+    &--16 {
+      row-gap: 16px;
+    }
+
+    &--20 {
+      row-gap: 20px;
+    }
+
+    &--24 {
+      row-gap: 24px;
+    }
+
+    &--32 {
+      row-gap: 32px;
+    }
+
+    &--40 {
+      row-gap: 40px;
+    }
+  }
+
+  &__wrap {
+    &--wrap {
+      flex-wrap: wrap;
+    }
+
+    &--nowrap {
+      flex-wrap: nowrap;
+    }
+
+    &--wrap-reverse {
+      flex-wrap: wrap-reverse;
+    }
+  }
+
+  &__direction {
+    &--row {
+      flex-direction: row;
+    }
+
+    &--row-reverse {
+      flex-direction: row-reverse;
+    }
+
+    &--column {
+      flex-direction: column;
+    }
+
+    &--column-reverse {
+      flex-direction: column-reverse;
+    }
+  }
+}

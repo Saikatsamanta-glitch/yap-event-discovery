@@ -1,0 +1,21 @@
+.content-loader {
+  color: transparent;
+  opacity: 1;
+  // dark
+  background-image: linear-gradient(
+    270deg,
+    var(--y-content-loader-bg-1-color) 0%,
+    var(--y-content-loader-bg-2-color) 100%
+  );
+  animation: loader 1.2s ease-in-out infinite;
+  background-size: 400%;
+}
+
+@keyframes loader {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

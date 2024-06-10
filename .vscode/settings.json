@@ -1,0 +1,23 @@
+{
+  "explorer.sortOrder": "type",
+  "explorer.confirmDragAndDrop": true,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wrappingIndent": "same",
+  "editor.wordWrapColumn": 140,
+  "editor.detectIndentation": true,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  // show eslint icon at bottom toolbar
+  "eslint.alwaysShowStatus": true,
+  // tell the ESLint plugin to run on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "never"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

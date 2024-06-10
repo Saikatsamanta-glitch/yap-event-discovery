@@ -1,0 +1,21 @@
+.responsive-carousel {
+  width: 100%;
+  height: 400px;
+
+  &--image {
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-carousel {
+    height: 120px;
+    width: 100%;
+
+    &--image {
+      height: 120px;
+    }
+  }
+}

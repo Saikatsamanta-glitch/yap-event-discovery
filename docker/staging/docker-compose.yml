@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  event-discovery-interface:
+    container_name: stg-event-discovery-interface
+    build:
+      context: ../../
+      dockerfile: docker/staging/Dockerfile
+      args:
+        - NPM_TOKEN=$NPM_TOKEN
+    ports:
+      - '8156:8156'

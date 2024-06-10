@@ -1,0 +1,489 @@
+:root {
+  .illustration {
+    &-light {
+      display: unset;
+    }
+    &-dark {
+      display: none;
+    }
+  }
+
+  --body-bg: var(--y-light-theme);
+  --navbar-bg-color: var(--y-light-theme);
+  --navbar-link-color: #001d55;
+  --category-genre-bg-color: var(--y-light-theme);
+  --event-carousel-bg-color: var(--y-light-theme);
+  --event-card-border-color: var(--y-gray-200);
+  --event-card-bg-color: var(--y-gray-100);
+  --event-card-time-color: var(--y-gray-600);
+  --event-card-date-color: var(--y-gray-600);
+  --event-card-event-name-color: var(--y-gray-950);
+  --event-card-detail-bg: var(--y-gray-100);
+  --more-events-bg-color: rgba(255, 109, 90, 0.04);
+
+  --navbar-bottom-border-color: #f1f3f4;
+
+  --event-time-category-title: var(--y-gray-950);
+  --event-time-category-title-location: var(--y-primary-normal);
+
+  --y-tag-blur-active-bg-color: var(--y-primary-normal);
+  --y-tag-blur-color: var(--y-gray-900);
+  --y-tag-blur-border-color: var(--y-gray-700);
+  --y-tag-blur-bg-color: var(--y-gray-000);
+
+  --y-tag-outline-bg-color: var(--y-gray-000);
+  --y-tag-outline-border-color: var(--y-gray-400);
+  --y-tag-outline-text-color: var(--y-gray-700);
+
+  --y-tag-outline-active-bg-color: rgba(255, 109, 90, 0.12);
+  --y-tag-outline-active-border-color: var(--y-primary-normal);
+  --y-tag-outline-active-text-color: var(--y-primary-normal);
+
+  --y-heading-fancy-text-color: var(--y-gray-900);
+  --y-heading-fancy-border-color: var(--y-primary-normal);
+
+  --y-button-bg-color: var(--y-gray-000);
+  --y-button-border-color: var(--y-primary-normal);
+  --y-button-text-color: var(--y-primary-normal);
+
+  --y-button-hover-text-color: var(--y-gray-000);
+  --y-button-hover-bg-color: var(--y-primary-normal);
+  --y-button-hover-border-color: var(--y-primary-normal);
+
+  --event-detail-card-border: var(--y-gray-200);
+  --event-detail-card-name: var(--y-gray-950);
+
+  --event-detail-card-info-icon-bg-color: var(--y-gray-100);
+  --event-detail-card-info-date-color: var(--y-gray-800);
+  --event-detail-card-info-location-color: var(--y-gray-900);
+  --event-detail-card-info-link-color: var(--y-gray-950);
+  --event-detail-card-info-link-border-color: var(--y-gray-950);
+  --event-detail-card-info-heading-color: var(--y-gray-900);
+
+  --event-detail-card-ticket-title: var(--y-gray-950);
+
+  --event-detail-about-text-color: var(--y-gray-600);
+
+  --y-artist-card-name-color: var(--y-gray-950);
+  --y-artist-name-color: var(--y-gray-950);
+
+  --event-detail-organizers-name-color: var(--y-gray-950);
+
+  --y-hero-background-title-color: var(--y-gray-600);
+  --y-hero-background-subtitle-color: var(--y-gray-200);
+
+  --y-calendar-bg-color: var(--y-light-theme);
+  --y-calendar-bg-hover-color: var(--y-gray-200);
+  --y-calendar-event_date-bg-color: var(--y-gray-000);
+  --y-calendar-event_date-border-color: var(--y-gray-300);
+  --y-calendar-event_date-month-color: var(--y-gray-600);
+  --y-calendar-event_date-day-color: var(--y-gray-950);
+  --y-calendar-event_title-color: var(--y-gray-950);
+  --y-calendar-event_subtitle-color: var(--y-gray-600);
+
+  --y-content-loader-bg-1-color: rgba(213, 213, 213, 1);
+  --y-content-loader-bg-2-color: rgba(229, 229, 229, 1);
+
+  --search-page-highlight-color: var(--y-primary-normal);
+  --search-page-bg-color: var(--y-gray-000);
+  --search-page-heading-color: var(--y-gray-900);
+
+  --empty-screen-heading-color: var(--y-primary-normal);
+  --empty-screen-subheading-color: var(--y-gray-900);
+  --event-detail-popover-bg-color: var(--y-light-theme);
+  --event-detail-popover-text-color: var(--y-gray-800);
+  --event-detail-popover-divider-color: var(--y-gray-400);
+
+  --y-overlay-header-bg-color: var(--y-gray-950);
+  --y-overlay-backdrop-bg-color: rgba(0, 0, 0, 0.64);
+  --y-overlay-body-color: var(--y-gray-000);
+  --y-overlay-title-color: var(--y-gray-000);
+
+  --event-detail-share-item-bg-color: var(--y-gray-000);
+  --event-detail-share-item-hover-bg-color: rgba(255, 109, 90, 0.08);
+  --event-detail-share-item-text-color: var(--y-gray-700);
+  --event-detail-share-item-text-hover-color: var(--y-gray-950);
+  --event-detail-share-copy-link-icon-color: var(--y-gray-999);
+
+  --navbar-mobile-header-bg-color: var(--y-gray-950);
+  --navbar-mobile-body-bg-color: var(--y-gray-000);
+  --navbar-mobile-text-color: var(--y-gray-000);
+
+  --y-search-box-bg-color: var(--y-gray-000);
+  --y-search-box-text-color: var(--y-gray-950);
+  --y-search-box-border-color: var(--y-gray-300);
+  --y-search-box-placeholder-color: var(--y-gray-600);
+
+  --event-detail-card-ticket-seller-bg-color: var(--y-gray-100);
+  --event-detail-about-toggle-color: var(--y-gray-950);
+
+  --location-overlay-no-result-title-text-color: var(--y-gray-950);
+  --location-overlay-no-result-title-highlight-color: var(--y-primary-normal);
+  --location-overlay-option-bg-color: var(--y-gray-000);
+  --location-overlay-option-bg-hover-color: rgba(255, 109, 90, 0.08);
+  --location-overlay-option-text-color: var(--y-gray-700);
+  --location-overlay-option-text-hightlight-color: var(--y-gray-950);
+
+  --event-detail-event-share-bg-color: var(--y-gray-100);
+  --event-detail-event-location-bg-color: var(--y-gray-100);
+
+  --searchbar-dropdown-bg-color: var(--y-gray-000);
+  --searchbar-dropdown-border-color: var(--y-gray-400);
+  --searchbar-dropdown-item-title-color: var(--y-gray-800);
+  --searchbar-dropdown-item-subtitle-color: var(--y-gray-900);
+  --searchbar-dropdown-icon-bg-color: var(--y-primary-opacity-10);
+
+  --footer-bg-color: var(--y-footer-bg);
+  --footer-category-color: var(--y-gray-000);
+  --footer-category-list-color: var(--y-gray-500);
+  --footer-copyright-color: var(--y-gray-000);
+  --category-icon-label: var(--y-primary-normal);
+
+  --event-detail-similar-event-bg: var(--y-gray-000);
+  --event-detail-card-info-price-color: var(--y-gray-900);
+
+  --event-past-event-bg-color: var(--y-primary-opacity-10);
+  --event-past-event-title-color: var(--y-primary-normal);
+  --event-past-event-description-color: var(--y-gray-700);
+  --event-past-event-link-color: var(--y-gray-950);
+
+  --bot-heading-color: var(--y-gray-900);
+  --bot-paragraph-color: var(--y-gray-800);
+
+  --event-card-price-color: var(--y-gray-950);
+  --event-card-know-more-color: var(--y-gray-950);
+  --event-card-know-more-border-color: var(--y-gray-950);
+  --event-card-know-more-hover-color: var(--y-gray-300);
+
+  --navbar-logo-events-color: var(--y-gray-950);
+
+  --event-detail-card-info-share-label-color: var(--y-gray-900);
+
+  --y-artist-card-heading-color: var(--y-gray-900);
+  --y-artist-card-image-bg: var(--y-gray-200);
+  --y-artist-card-image-font-color: var(--y-gray-700);
+
+  --event-detail-card-map-location-main-label-color: var(--y-gray-800);
+  --event-detail-card-map-location-sub-label-color: var(--y-gray-600);
+
+  --category-genre-btn-border-color: var(--y-gray-200);
+  --category-genre-btn-bg-color: var(--y-gray-000);
+  --category-genre-btn-hover-border-color: var(--y-gray-200);
+  --category-genre-btn-hover-bg-color: var(--y-gray-200);
+  --category-genre-btn-active-border-color: var(--y-primary-normal);
+  --category-genre-btn-active-bg-color: var(--y-primary-opacity-10);
+  --category-genre-btn-active-hover-color: var(--y-primary-normal);
+
+  --category-overlay-more-btn-border-color: var(--y-gray-200);
+  --category-overlay-more-btn-bg-color: var(--y-gray-000);
+  --category-overlay-more-btn-hover-border-color: var(--y-gray-200);
+  --category-overlay-more-btn-hover-bg-color: var(--y-gray-200);
+  --category-overlay-more-label-color: var(--y-primary-normal);
+
+  --y-location-overlay-title-color: var(--y-gray-950);
+  --y-location-overlay-city-name-color: var(--y-gray-950);
+  --y-location-overlay-country-name-color: var(--y-gray-800);
+  --y-location-overlay-online-name-color: var(--y-gray-950);
+  --y-location-overlay-view-more-color: var(--y-gray-950);
+
+  --y-location-overlay-hover-name-color: var(--y-primary-normal);
+  --y-location-overlay-hover-border-color: var(--y-primary-normal);
+  --y-location-overlay-hover-bg: var(--y-primary-opacity-10);
+
+  --y-location-overlay-bg: rgba(0, 0, 0, 0.08);
+
+  --city-listing-title-color: var(--y-gray-950);
+  --city-listing-subtitle-color: var(--y-gray-950);
+  --city-listing-mobile-title-color: var(--y-gray-200);
+  --city-listing-mobile-subtitle-color: var(--y-gray-100);
+  --city-listing-item-heading-color: var(--y-gray-950);
+  --city-listing-item-heading-bg-color: var(--y-gray-200);
+  --city-listing-item-color: var(--y-gray-800);
+  --city-listing-country-title-color: var(--y-gray-950);
+  --city-listing-country-name-color: var(--y-gray-800);
+  --city-listing-divider-color: var(--y-gray-400);
+  --city-keys-bg-color: var(--y-gray-000);
+
+  --blog-home-page-title-color: var(--y-gray-950);
+  --blog-home-page-description-color: var(--y-gray-600);
+  --blog-card-border-color: var(--y-gray-200);
+  --blog-card-bg-color: var(--y-gray-100);
+  --blog-card-detail-bg: var(--y-gray-100);
+  --blog-card-time-color: var(--y-gray-600);
+  --blog-card-date-color: var(--y-gray-600);
+  --blog-card-blog-name-color: var(--y-gray-950);
+
+  --blog-detail-page-title-color: var(--y-gray-950);
+  --blog-detail-page-description-color: var(--y-gray-600);
+  --blog-section-title-color: var(--y-gray-900);
+  --blog-section-link-color: var(--y-gray-900);
+
+  // svg
+  --event-icon-color-1: #f8ebef;
+  --event-icon-color-2: var(--y-primary-normal);
+  --event-icon-color-3: var(--y-primary-normal);
+  --event-icon-color-4: #f8ebef;
+
+  --artist-icon-color-1: #f8ebef;
+  --artist-icon-color-2: var(--y-primary-normal);
+
+  --organizer-icon-color-1: #f8ebef;
+  --organizer-icon-color-2: var(--y-primary-normal);
+
+  --venue-icon-color-1: #f8ebef;
+  --venue-icon-color-2: var(--y-primary-normal);
+
+  --category-icon-default-color: var(--y-gray-900);
+
+  --event-detail-clock-icon: var(--y-gray-700);
+  --event-detail-location-icon: var(--y-gray-700);
+  --event-detail-wallet-icon: var(--y-gray-700);
+
+  --past-event-clock-icon: var(--y-primary-normal);
+}
+
+[data-theme='dark'] {
+  .illustration {
+    &-light {
+      display: none;
+    }
+    &-dark {
+      display: unset;
+    }
+  }
+
+  --body-bg: var(--y-dark-theme);
+  --navbar-bg-color: var(--y-dark-theme);
+  --navbar-link-color: #eeeeee;
+  --category-genre-bg-color: var(--y-dark-theme);
+  --event-carousel-bg-color: var(--y-dark-theme);
+
+  --event-card-border-color: var(--y-gray-900);
+  --event-card-bg-color: var(--y-gray-950);
+  --event-card-time-color: var(--y-gray-400);
+  --event-card-detail-bg: var(--y-gray-950);
+  --event-card-event-name-color: var(--y-gray-100);
+  --event-card-date-color: var(--y-gray-400);
+
+  --navbar-bottom-border-color: #1c1c1c;
+
+  --more-events-bg-color: rgba(205, 97, 83, 0.16);
+  --ansh-input-field-bg-color: unset;
+  --ansh-input-field-border-color: var(--y-gray-700);
+  --ansh-input-field-text-color: var(--y-gray-600);
+
+  --event-time-category-title: var(--y-gray-400);
+  --event-time-category-title-location: var(--y-gray-000);
+
+  --y-tag-blur-active-bg-color: var(--y-primary-normal);
+  --y-tag-blur-color: var(--y-gray-200);
+  --y-tag-blur-border-color: var(--y-gray-700);
+
+  --y-tag-outline-bg-color: var(--y-dark-theme);
+  --y-tag-outline-border-color: var(--y-gray-600);
+  --y-tag-outline-text-color: var(--y-gray-400);
+
+  --y-tag-outline-active-bg-color: rgba(228, 0, 70, 0.2);
+  --y-tag-outline-active-border-color: var(--y-primary-normal);
+  --y-tag-outline-active-text-color: var(--y-gray-400);
+
+  --y-heading-fancy-text-color: var(--y-gray-300);
+  --y-heading-fancy-border-color: var(--y-primary-normal);
+
+  --y-button-bg-color: var(--y-gray-900);
+  --y-button-border-color: var(--y-primary-normal);
+  --y-button-text-color: var(--y-primary-normal);
+
+  --event-detail-card-border: var(--y-gray-900);
+  --event-detail-card-name: var(--y-gray-200);
+  --event-detail-card-info-icon-bg-color: var(--y-gray-900);
+  --event-detail-card-info-date-color: var(--y-gray-100);
+  --event-detail-card-info-location-color: var(--y-gray-000);
+  --event-detail-card-info-link-color: var(--y-gray-200);
+  --event-detail-card-info-link-border-color: var(--y-gray-200);
+  --event-detail-card-info-heading-color: var(--y-gray-100);
+
+  --event-detail-card-ticket-title: var(--y-gray-100);
+
+  --event-detail-about-text-color: var(--y-gray-400);
+
+  --y-artist-card-name-color: var(--y-gray-300);
+  --y-artist-name-color: var(--y-gray-200);
+
+  --event-detail-organizers-name-color: var(--y-gray-200);
+
+  --y-calendar-bg-color: var(--y-dark-theme);
+  --y-calendar-bg-hover-color: var(--y-gray-200);
+  --y-calendar-event_date-bg-color: var(--y-dark-theme);
+  --y-calendar-event_date-border-color: var(--y-gray-900);
+  --y-calendar-event_date-month-color: var(--y-gray-700);
+  --y-calendar-event_date-day-color: var(--y-gray-200);
+  --y-calendar-event_title-color: var(--y-gray-200);
+  --y-calendar-event_subtitle-color: var(--y-gray-700);
+
+  --y-content-loader-bg-1-color: rgba(95, 95, 95, 1);
+  --y-content-loader-bg-2-color: rgba(105, 105, 105, 1);
+
+  --search-page-highlight-color: var(--y-primary-normal);
+  --search-page-bg-color: var(--y-dark-theme);
+  --search-page-heading-color: var(--y-gray-100);
+
+  --empty-screen-heading-color: var(--y-primary-normal);
+  --empty-screen-subheading-color: var(--y-gray-300);
+
+  --event-detail-popover-bg-color: var(--y-dark-theme);
+  --event-detail-popover-text-color: var(--y-gray-600);
+  --event-detail-popover-divider-color: var(--y-gray-900);
+
+  --y-overlay-header-bg-color: var(--y-gray-950);
+  --y-overlay-backdrop-bg-color: rgba(0, 0, 0, 0.72);
+  --y-overlay-body-color: var(--y-dark-theme);
+  --y-overlay-title-color: var(--y-gray-000);
+
+  --event-detail-share-item-bg-color: var(--y-dark-theme);
+  --event-detail-share-item-hover-bg-color: rgba(255, 109, 90, 0.16);
+  --event-detail-share-item-text-color: var(--y-gray-600);
+  --event-detail-share-item-text-hover-color: var(--y-gray-300);
+  --event-detail-share-copy-link-icon-color: var(--y-gray-600);
+
+  --navbar-mobile-header-bg-color: var(--y-gray-950);
+  --navbar-mobile-body-bg-color: var(--y-dark-theme);
+  --navbar-mobile-text-color: var(--y-gray-000);
+
+  --y-search-box-bg-color: var(--y-gray-900);
+  --y-search-box-text-color: var(--y-gray-100);
+  --y-search-box-border-color: var(--y-gray-700);
+  --y-search-box-placeholder-color: var(--y-gray-400);
+
+  --event-detail-card-ticket-seller-bg-color: var(--y-gray-900);
+  --event-detail-about-toggle-color: var(--y-gray-100);
+
+  --location-overlay-no-result-title-text-color: var(--y-gray-300);
+  --location-overlay-no-result-title-highlight-color: var(--y-primary-normal);
+  --location-overlay-option-bg-color: var(--y-dark-theme);
+  --location-overlay-option-bg-hover-color: rgba(255, 109, 90, 0.16);
+  --location-overlay-option-text-color: var(--y-gray-600);
+  --location-overlay-option-text-hightlight-color: var(--y-gray-300);
+
+  --event-detail-event-share-bg-color: var(--y-dark-theme);
+  --event-detail-event-location-bg-color: var(--y-dark-theme);
+
+  --searchbar-dropdown-bg-color: var(--y-dark-theme);
+  --searchbar-dropdown-border-color: var(--y-gray-900);
+  --searchbar-dropdown-item-title-color: var(--y-gray-400);
+  --searchbar-dropdown-item-subtitle-color: var(--y-gray-200);
+  --searchbar-dropdown-icon-bg-color: var(--y-primary-opacity-20);
+
+  --footer-bg-color: var(--y-footer-bg);
+  --category-icon-label: var(--y-gray-200);
+
+  --event-detail-similar-event-bg: var(--y-dark-theme);
+  --event-detail-card-info-price-color: var(--y-gray-000);
+
+  --event-past-event-bg-color: rgba(228, 0, 70, 0.16);
+  --event-past-event-title-color: var(--y-gray-000);
+  --event-past-event-description-color: var(--y-gray-500);
+  --event-past-event-link-color: var(--y-gray-000);
+
+  --bot-heading-color: var(--y-gray-000);
+  --bot-paragraph-color: var(--y-gray-600);
+
+  --event-card-price-color: var(--y-gray-100);
+  --event-card-know-more-color: var(--y-gray-200);
+  --event-card-know-more-border-color: var(--y-gray-200);
+  --event-card-know-more-hover-color: var(--y-gray-700);
+
+  --navbar-logo-events-color: var(--y-gray-000);
+
+  --event-detail-card-info-share-label-color: var(--y-gray-300);
+
+  --y-artist-card-heading-color: var(--y-gray-300);
+  --y-artist-card-image-bg: var(--y-gray-900);
+  --y-artist-card-image-font-color: var(--y-gray-400);
+
+  --event-detail-card-map-location-main-label-color: var(--y-gray-200);
+  --event-detail-card-map-location-sub-label-color: var(--y-gray-400);
+
+  --category-genre-btn-border-color: var(--y-gray-700);
+  --category-genre-btn-bg-color: var(--y-gray-000);
+  --category-genre-btn-hover-border-color: var(--y-gray-700);
+  --category-genre-btn-hover-bg-color: var(--y-gray-900);
+  --category-genre-btn-active-border-color: var(--y-primary-normal);
+  --category-genre-btn-active-bg-color: var(--y-primary-opacity-20);
+  --category-genre-btn-active-hover-color: var(--y-primary-normal);
+
+  --y-tag-blur-active-bg-color: var(--y-primary-normal);
+  --y-tag-blur-color: var(--y-gray-200);
+  --y-tag-blur-border-color: var(--y-gray-700);
+  --y-tag-blur-bg-color: var(--y-gray-900);
+
+  --category-overlay-more-btn-border-color: var(--y-gray-700);
+  --category-overlay-more-btn-bg-color: var(--y-gray-000);
+  --category-overlay-more-btn-hover-border-color: var(--y-gray-700);
+  --category-overlay-more-btn-hover-bg-color: var(--y-gray-900);
+  --category-overlay-more-label-color: var(--y-gray-200);
+
+  --y-location-overlay-title-color: var(--y-gray-100);
+  --y-location-overlay-city-name-color: var(--y-gray-300);
+  --y-location-overlay-country-name-color: var(--y-gray-300);
+  --y-location-overlay-online-name-color: var(--y-gray-200);
+  --y-location-overlay-view-more-color: var(--y-gray-100);
+
+  --y-location-overlay-hover-name-color: var(--y-gray-100);
+  --y-location-overlay-hover-border-color: var(--y-primary-normal);
+  --y-location-overlay-hover-bg: var(--y-primary-opacity-10);
+
+  --y-location-overlay-bg: rgba(255, 255, 255, 0.16);
+
+  --city-listing-title-color: var(--y-gray-000);
+  --city-listing-subtitle-color: var(--y-gray-100);
+  --city-listing-mobile-title-color: var(--y-gray-200);
+  --city-listing-mobile-subtitle-color: var(--y-gray-100);
+  --city-listing-item-heading-color: var(--y-gray-100);
+  --city-listing-item-heading-bg-color: var(--y-gray-900);
+  --city-listing-item-color: var(--y-gray-300);
+  --city-listing-country-title-color: var(--y-gray-100);
+  --city-listing-country-name-color: var(--y-gray-300);
+  --city-listing-divider-color: var(--y-gray-600);
+  --city-keys-bg-color: var(--y-dark-theme);
+
+  --blog-home-page-title-color: var(--y-gray-200);
+  --blog-home-page-description-color: var(--y-gray-400);
+  --blog-card-border-color: var(--y-gray-900);
+  --blog-card-bg-color: var(--y-gray-950);
+  --blog-card-detail-bg: var(--y-gray-950);
+  --blog-card-time-color: var(--y-gray-400);
+  --blog-card-blog-name-color: var(--y-gray-300);
+  --blog-card-date-color: var(--y-gray-400);
+
+  --blog-detail-page-title-color: var(--y-gray-000);
+  --blog-detail-page-description-color: var(--y-gray-500);
+  --blog-section-title-color: var(--y-gray-300);
+  --blog-section-link-color: var(--y-gray-100);
+
+  // svg
+  --event-icon-color-1: #33242b;
+  --event-icon-color-2: var(--y-primary-normal);
+  --event-icon-color-3: var(--y-primary-normal);
+  --event-icon-color-4: #32242c;
+
+  --artist-icon-color-1: #33242c;
+  --artist-icon-color-2: var(--y-primary-normal);
+
+  --organizer-icon-color-1: #33242c;
+  --organizer-icon-color-2: var(--y-primary-normal);
+
+  --organizer-icon-color-1: #33242c;
+  --organizer-icon-color-2: var(--y-primary-normal);
+
+  --venue-icon-color-1: #33242c;
+  --venue-icon-color-2: var(--y-primary-normal);
+
+  --category-icon-default-color: var(--y-gray-200);
+
+  --event-detail-clock-icon: #d1d1d1;
+  --event-detail-location-icon: #d1d1d1;
+  --event-detail-wallet-icon: #d1d1d1;
+
+  --past-event-clock-icon: var(--y-gray-500);
+}

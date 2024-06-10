@@ -1,0 +1,22 @@
+.event-grid {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
+
+  &--container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+    justify-items: center;
+    padding-bottom: 20px;
+  }
+
+  &__heading {
+    margin-bottom: 21px;
+    text-transform: capitalize;
+  }
+}

@@ -1,0 +1,204 @@
+.location-overlay {
+  max-width: 640px;
+  height: auto;
+  top: 56%;
+
+  &__body {
+    height: 100%;
+    background-color: var(--y-overlay-body-color);
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+
+    .empty-screen {
+      padding-top: 30px;
+      padding-bottom: 0px;
+    }
+
+    &--title {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      color: var(--y-location-overlay-title-color);
+    }
+  }
+
+  &__header {
+    text-decoration: underline;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 28px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: inherit;
+  }
+
+  &__list {
+    &--container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      gap: 16px;
+    }
+    &--items {
+      display: flex;
+      align-items: center;
+      width: 140px;
+      height: 40px;
+      padding-left: 12px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: var(--y-location-overlay-city-name-color);
+      text-decoration: none;
+
+      &:hover {
+        background-color: var(--y-location-overlay-hover-bg);
+        border: 1px solid var(--y-location-overlay-hover-border-color);
+        border-radius: 4px;
+        color: var(--y-location-overlay-hover-name-color);
+      }
+    }
+
+    &--view-more {
+      display: flex;
+      align-items: center;
+      width: 140px;
+      height: 40px;
+      padding-left: 12px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      color: var(--y-location-overlay-view-more-color);
+      text-decoration: none;
+      svg {
+        transform: rotate(-90deg);
+        margin-left: 4px;
+        g {
+          fill: var(--y-location-overlay-view-more-color);
+        }
+        path {
+          fill: var(--y-location-overlay-view-more-color);
+        }
+      }
+    }
+  }
+
+  &__divider {
+    margin: 24px 0px;
+    background-color: var(--y-location-overlay-bg) !important;
+  }
+
+  &__online {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: var(--y-location-overlay-online-name-color);
+    text-decoration: none;
+    width: fit-content;
+
+    &:hover {
+      background-color: var(--y-location-overlay-hover-bg);
+      border: 1px solid var(--y-location-overlay-hover-border-color);
+      border-radius: 4px;
+      color: var(--y-location-overlay-hover-name-color);
+      width: fit-content;
+      padding-right: 10px;
+    }
+  }
+
+  &__countries {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 10px;
+
+    a {
+      text-decoration: none;
+      color: var(--y-location-overlay-country-name-color);
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      align-items: center;
+
+      &:hover {
+        text-decoration: underline var(--y-location-overlay-country-name-color);
+      }
+    }
+
+    &--flag {
+      width: 48px;
+      height: 32px;
+
+      &--name {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        color: var(--y-location-overlay-country-name-color);
+      }
+    }
+  }
+
+  &__no-result {
+    &--title {
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 500;
+      border-left: 4px solid
+        var(--location-overlay-no-result-title-highlight-color);
+      margin: 8px 16px;
+      color: var(--location-overlay-no-result-title-text-color);
+
+      &-highlight {
+        padding-left: 10px;
+        color: var(--location-overlay-no-result-title-highlight-color);
+      }
+    }
+
+    &--img {
+      display: flex;
+      justify-content: center;
+      margin-top: 8px;
+      svg {
+        max-width: 175px;
+        max-height: 190px;
+      }
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 640px) {
+  .location-overlay {
+    height: auto;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 480px) {
+  .location-overlay {
+    height: 100%;
+    z-index: 1006;
+    top: 50%;
+
+    &__header {
+      font-size: 22px;
+      line-height: 24px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}

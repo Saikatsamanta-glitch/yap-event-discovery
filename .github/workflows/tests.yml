@@ -1,0 +1,47 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+
+  audit:
+    name: Audit Dependencies
+    uses: yapsody/actions/.github/workflows/audit-dependencies.yml@master
+    secrets: inherit
+  
+  git-conflict-check:
+    name: Audit Git conflict
+    uses: yapsody/actions/.github/workflows/git-conflict.yml@master
+    secrets: inherit
+    
+
+  lint:
+    name: Lint Code
+    needs: [audit, git-conflict-check]
+    runs-on: self-hosted
+    env:
+      INPUT_TOKEN: ${{ secrets.NPM_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4.0.2
+        with:
+          node-version: "18"
+      - name: Installing Dependencies
+        run: npm ci
+      - name: Lint Source
+        id: lint_source
+        run: npm run lint
+        continue-on-error: true
+
+  code-quality:
+    name: Code Quality
+    needs: [lint]
+    uses: yapsody/actions/.github/workflows/fe-code-quality.yml@master
+    secrets: inherit

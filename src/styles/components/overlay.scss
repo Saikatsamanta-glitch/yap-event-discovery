@@ -1,0 +1,77 @@
+.y-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 360px;
+  height: 294px;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 1;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__header {
+    height: 52px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--y-overlay-header-bg-color);
+    color: var(--y-overlay-title-color);
+
+    &--title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 20px;
+      color: var(--y-overlay-title-color);
+    }
+
+    &--close-icon {
+      width: 16px;
+      height: 16px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__body {
+    flex: 1;
+    background-color: var(--y-overlay-body-color);
+    overflow-y: auto;
+  }
+
+  &__backdrop {
+    z-index: 1;
+    background-color: var(--y-overlay-backdrop-bg-color);
+    position: fixed;
+    inset: 0;
+    animation: overlayShow 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes contentShow {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
